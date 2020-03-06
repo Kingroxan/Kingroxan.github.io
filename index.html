@@ -1,25 +1,85 @@
-<!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-	<title>智慧果</title>
-	<meta charset="utf-8">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>
+	智慧果
+	</title>
+	<style>
+		.clearfix:after {
+			content: '\20';
+			display: block;
+			height: 0;
+			clear: both;
+			visibility: hidden;
+			overflow: hidden;
+		}
+		.div1Class{
+			font-size: 34px;
+			text-align: center;
+			
+			width: 37%;
+			margin-left: 10%;
+			height: 90px;
+			line-height: 2.5;
+			color: white;
+			border-radius: 12px;
+			margin-top: 50px;
+			float: left;
+		}
+		.div2Class{
+			font-size: 34px;
+			text-align: center;
+			width: 37%;
+			margin-left: 6%;
+			height: 90px;
+			line-height: 2.5;
+			color: white;
+			border-radius: 12px;
+			margin-top: 50px;
+			float: left;
+		}
+		.zgyd{
+			background-color: #469408;
+		}
+		.zgdx{
+			background-color: #3399f3;
+		}
+		.zglt{
+			background-color: #d9230f;
+		}
+	</style>
 </head>
+
 <body style="margin: 0px;font-family: Helvetica,Arial,Microsoft YaHei,Segoe UI,Lucida Grande,FreeSans,Arimo,Droid Sans,wenquanyi micro hei,Hiragino Sans GB,Hiragino Sans GB W3,sans-serif;">
 <div id="div1">
 <img src="./top.jpg"  style="width:100%;"  id="top_image">
 </div>
 <div style="text-indent:60px;padding:35px 45px 0px 45px;font-family:SimHei;font-size: 34px;line-height: 1.6;"   id="div2">感谢您选购我公司超级流量卡，我司的超级流量卡具有高速、实惠、稳定等特点，通用全国流量不限APP，是您副卡的不二之选！</div>
 <div style="padding-top:55px;font-family:SimHei;font-weight:bold;color:#0000FF;font-size: 34px;padding-left: 45px;" id="div3">请选择运营商：</div>
-<div style="">
-<div style="font-size: 34px;text-align: center;background-color: #469408;width: 74%;margin-left: 13%;height: 90px;line-height: 2.5;color: white;border-radius: 12px;margin-top: 50px;" onclick="zgyd()">
-中国移动
+
+<div class="clearfix">
+	<div class="div1Class zglt" onclick="zglt()">
+	中国联通169
+	</div>
+	<div class="div2Class zglt" onclick="zglt2()">
+	中国联通160
+	</div>
 </div>
-<div style="font-size: 34px;text-align: center;background-color: #d9230f;width: 74%;margin-left: 13%;height: 90px;line-height: 2.5;color: white;border-radius: 12px;margin-top: 50px;" onclick="zglt()">
-中国联通
+<div class="clearfix">
+	<div class="div1Class zgdx" onclick="zglt()">
+	中国电信179
+	</div>
+	<div class="div2Class zgdx" onclick="zglt2()">
+	中国电信170
+	</div>
 </div>
-<div style="font-size: 34px;text-align: center;background-color: #3399f3;width: 74%;margin-left: 13%;height: 90px;line-height: 2.5;color: white;border-radius: 12px;margin-top: 50px;" onclick="zgdx()">
-中国电信
-</div>
+<div class="clearfix">
+	<div class="div1Class zgyd" onclick="zgyd()">
+	中国移动1
+	</div>
+	<div class="div2Class zgyd" onclick="zgyd()">
+	中国移动2
+	</div>
 </div>
 </body>
 <script type="text/javascript">
@@ -29,6 +89,9 @@
          }
 		 function zglt(){
              window.open("http://dianxin.kahao114.com");
+         }
+		 function zglt2(){
+             window.open("http://xiaozhi.kahao114.com");
          }
 		 function zgdx(){
              window.open("http://dianxin.kahao114.com");
